@@ -62,10 +62,9 @@ export default function Historial() {
                 title={doctor.name}
                 description={doctor.specialty}
                 left={() => (
-                  <Avatar.Image
-                    source={doctor.image}
-                    Color={'#fff'}
-                    size={60}
+                  <Image
+                    source={{ uri: doctor.image }}
+                    style={{ height: 60, width: 60, borderRadius: 100 }}
                   />
                 )}
               />
